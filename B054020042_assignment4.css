@@ -1,0 +1,159 @@
+.header{
+	border:1px grey solid;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+img{
+	width:43px;
+	height:43px;
+	padding: 12px 12px;
+}
+.namediv{
+	margin-top: -61px;
+	margin-left:  65px;
+}
+.name{
+	font-family: "微軟正黑體";
+	font-weight: bolder;
+	color: #3b5998;
+		}
+.rightside{
+	margin-left: 465px;
+	margin-top: -23px;
+}
+.tag{
+	margin-left: 65px;
+	margin-top: -2px;
+}
+.dor{
+	font-family: "微軟正黑體";
+	color: grey;
+	font-size: 14px;
+}
+.lock{
+	margin-left: 48px;
+	margin-top: -21px;
+}
+.content{
+	margin-left: 10px;
+	margin-top: 10px;
+	font-family: "微軟正黑體";
+	font-size: 24px;
+	font-weight: bold;
+}
+hr{
+	width: 478px;
+	margin-top: -7px;
+}
+.like{
+	margin-left: 10px;
+	margin-top: -4px;
+}
+.good{
+	font-family: "微軟正黑體";
+	color: grey;
+	font-size: 14px;
+	margin-top: -20px;
+	margin-left: 34px;
+}
+.messenger{
+	margin-left: 101px;
+	margin-top: -15px;	
+}
+.comment{
+	font-family: "微軟正黑體";
+	color: grey;
+	font-size: 14px;
+	margin-top: -24px;
+	margin-left: 124px;
+}
+
+.bottom{
+	border:1px grey solid;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F6F7F9;
+	border-top: none;
+	
+}
+.message{
+	margin-top: -53px;
+	margin-left: 60px;
+	
+}
+
+.word{
+	font-family: "微軟正黑體";
+	height: 30px;
+	width: 423px;
+}
+.fa-camera{
+	color: grey;
+	position: relative;
+	left: 430px;
+	top: -25px;
+}
+.fa-smile-o{
+	color: grey;
+	position: relative;
+	left: 440px;
+	top: -25px
+}
+.inner_1{
+	font-family:"微軟正黑體";
+	color: #3b5998;
+	position:relative;
+	top:-33px;
+	font-weight:bold;
+	left:-5px;
+}
+.inner_2{
+	font-family:"微軟正黑體";
+	font-size:13px;
+	font-weight: bold;
+	position:relative;
+	top:-53px;
+	left:108px;
+}
+.inner_3{
+	font-family: "微軟正黑體";
+	font-size: 14px;
+	color: #3b5998;
+	position: relative;
+	top: -50px;
+	left: 53px;
+}
+.commentarea{
+	height: 63.1px;
+	width: 497px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F6F7F9;
+	border-top: none;
+	position: relative;
+	top: -30px;
+	border:1px grey solid;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+}
+
+.mes1{
+	font-family: "微軟正黑體";
+	height: 20px;
+	width: 370px;
+	}
+
+.aa{
+	position: relative;
+	top: -10px;
+	left: 40px;
+}
+.bb{
+	margin-top: -45px;
+	margin-left: 60px;
+}

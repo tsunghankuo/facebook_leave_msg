@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>A fOrUm FoR lEaViNg CoMmEnTs</title>
+	<link rel="stylesheet" type="text/css" href="B054020042_assignment4.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div style="width: 60%;height: auto;margin-left: auto;margin-right: auto;">
+		<div class="header">
+			<div>
+				<img src="hann.jpg" alt="hann's">
+			</div>
+
+			<div class="namediv">
+				<span class="name">郭宗翰<br>
+			</div>
+				<div class="rightside"><i class="material-icons" style="font-size:24px;color: grey">keyboard_arrow_down</i></div>
+					<div class="tag">
+						<span class="dor">剛剛&nbsp&nbsp<i class="fa fa-lock" style="color: grey;font-size: 16px;"></i></span>
+							<div class="lock"><i class="material-icons">&#xe5c5;</i></div>
+					</div>
+			<div>
+				<p class="content">我下次會記得登出，以下開放雞排50份</p>
+				<hr>
+			</div>
+				<div class="like">
+					<i class="material-icons" style="font-size:20px;color:grey">thumb_up</i>
+				</div>
+				<div class="good">
+					<span style="position: relative;top: -2.5px;">讚</span>
+				</div>
+				<div class="messenger">
+					<i class="material-icons" style="font-size: 19px;color: grey;position: relative;top: -4px;">messenger</i>
+				</div>
+
+				<div class="comment">
+					<span style="position: relative;top: -5px;">留言</span>
+				</div>
+			</div>
+				<div id="comDiv">
+					
+					<div id="replydiv"></div>
+
+				</div>
+			<div class="bottom">
+			
+			<div>
+				<img src="hann.jpg" alt="hann's" style="height: 38px;width: 38px;">
+			</div>
+			<div class="message">
+				<input type="text" name="message" placeholder="&nbsp留言......" class="word" id="keyup">
+			</div>
+
+			<i class="fa fa-camera" style="font-size: 14px;"></i>
+			<i class="fa fa-smile-o"  style="font-size: 15px"></i>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var count = 0;//modified
+	document.getElementById("keyup").addEventListener("keyup",checkKeyPress, false);
+	function checkKeyPress(key){
+	if(key.keyCode=="13"){
+		
+		var text=document.getElementById("keyup");		
+		displaydiv(text);
+		text.value = "";
+	}
+	
+}
+
+function check(key){
+	if(key.keyCode=="13"){					
+		createreply(this);
+		this.value = "";		
+	}
+
+}
+
+function displaydiv(word){
+	var div =  document.getElementById("comDiv");
+	var a = document.createElement("div");
+	var b = document.getElementById("keyup").value;
+
+	div.innerHTML= div.innerHTML+'<div style="position:relative">'+'<div class="bottom" style="border-left:3px solid #6d84b4;width:498px;"><img src="hann.jpg" style="height: 34px;width: 34px;">'+'<span class="inner_1">'+'郭宗翰'+'<br>'+'</span>'+'<span class="inner_2">'+b+'</span>'+'<div><span class="inner_3">'+'讚'+'</span>'+'<span class="inner_3" style="left:61px;top:-50.1px;">'+'回覆'+'</span>'+'<span class="inner_3" style="left:69px;color:grey;">'+'剛剛'+'</span>'+'<div id="replydiv' + count +'"></div>'+'<div class="commentarea">'+'<div class="aa"><img src="hann.jpg" style="height:32px;width:32px;">'+'<div class="bb" ><input type="text" name="message" placeholder="&nbsp回覆......" class="mes1" id="keyup'+ count +'"></div>'+'<i class="fa fa-camera" style="font-size: 14px;position: relative;left: 380px;top: -21px"></i><i class="fa fa-smile-o"  style="font-size: 15px;position: relative;left: 390px;top: -21px"></i>'+'</div>'+'</div>'+'</div>'+'</div>'+'</div>';
+	for(var i=0; i <= count; i++)
+		document.getElementById("keyup"+i).addEventListener("keyup",check,false); 
+	count++;
+}
+
+function createreply(t){
+	reply_id = "replydiv"+(t.id).substring(5);
+	
+	var replyDiv = document.getElementById(reply_id);
+	var c = document.createElement("div");
+	var d = t.value;
+	c.innerHTML='<div style="position:relative">'+'<div class="bottom" style="border-left:3px solid #6d84b4;	width:440px;margin-top:-45px;margin-left:50px;border-right:none;"><img src="hann.jpg" style="height: 34px;width: 34px;">'+'<span class="inner_1">'+'郭宗翰'+'<br>'+'</span>'+'<span class="inner_2">'+d+'</span>'+'<div><span class="inner_3">'+'讚'+'</span>'+'<span class="inner_3" style="left:61px;top:-50.1px;"></div>'+'回覆'+'</span>'+'<span class="inner_3" style="left:39px;top:-69.5px;color:grey;">'+'剛剛'+'</span>'+'</div></div>';
+	replyDiv.appendChild(c);
+	
+}
+</script>
+</html>
